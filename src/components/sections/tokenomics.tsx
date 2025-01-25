@@ -14,15 +14,15 @@ const tokenAllocation = [
 export function Tokenomics() {
   return (
     <section className="py-20">
-      <div className="container mx-auto w-4/5">
+      <div className="container mx-auto w-5/6 md:w-4/5">
         {/* <p className="text-blue-500 uppercase text-center">CRNT TOKENOMICS</p> */}
         <h2 className="text-3xl font-bold text-center mb-12">
            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">CRNT Tokenomics</span>
         </h2>
 
         {/* Token Image */}
-        <div className="flex items-center gap-6">
-          <div className="relative w-full h-[550px] mb-12">
+        <div className="flex items-center flex-col md:flex-row gap-6">
+          <div className="relative w-full h-[50px] mb-12">
             <Image
               src="/assets/img/tokenomics.png"
               alt="Tokenomics Distribution"

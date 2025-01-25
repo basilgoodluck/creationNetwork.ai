@@ -12,7 +12,7 @@ import { OurFeatures } from "@/components/sections/ourFeatures";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#01071d] w-screen">
+    <div className="min-h-screen bg-[#01071d] overflow-x-hidden">
       <div className="relative">
         {/* Background image with gradient overlay */}
         <div className="absolute inset-0" style={{ height: '100vh' }}>

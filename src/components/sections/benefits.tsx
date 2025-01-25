@@ -52,7 +52,7 @@ export function Benefits() {
           Tailored solutions for different user segments, addressing specific needs and challenges in content creation and digital marketing.
         </p>
 
-        <div className="grid grid-cols-3 gap-6 w-4/5 mx-auto mt-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-4/5 mx-auto mt-8 relative">
           <BenefitCard {...benefits[0]} borderStyle="border-green-500" />
           <div className="relative w-full h-full flex items-center justify-center">
             <Image 

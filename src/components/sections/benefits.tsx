@@ -43,8 +43,8 @@ export function Benefits() {
   return (
     <section className="py-20">
       <div className="container flex flex-col items-center gap-6">
-        <p className="text-blue-500 uppercase text-center">Customer Profiles</p>
-        <h2 className="text-3xl font-bold text-center">
+        <p className="text-blue-500 uppercase text-center text-sm md:text-lg">Customer Profiles</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-center">
         Who Benefits from <br />
           <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">CreationNetwork.ai?</span>
         </h2>
@@ -52,9 +52,9 @@ export function Benefits() {
           Tailored solutions for different user segments, addressing specific needs and challenges in content creation and digital marketing.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-4/5 mx-auto mt-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[95%] md:w-5/6 lg:w-4/5 mx-auto mt-8 relative">
           <BenefitCard {...benefits[0]} borderStyle="border-green-500" />
-          <div className="relative w-full h-full flex items-center justify-center">
+          <div className="hidden md:block relative w-full h-full flex items-center justify-center">
             <Image 
               src="/assets/img/elipse4.png" 
               alt="elipse4" 

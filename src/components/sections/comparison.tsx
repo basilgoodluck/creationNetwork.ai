@@ -21,14 +21,14 @@ const competitors = [
 
 export function Comparison() {
   return (
-    <section className="py-20 w-4/5 mx-auto ">
+    <section className="py-20 w-[95%] md:w-5/6 lg:w-4/5 mx-auto">
       <div className="container flex flex-col items-center gap-4">
-        <p className="text-center text-blue-500">Competitor Comparison</p>
-        <h2 className="text-3xl font-semibold text-center mb-4">
+        <p className="text-center text-blue-500 text-sm md:text-lg">Competitor Comparison</p>
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-4">
           How We Stand Out <br /><span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Against the Competition</span>
         </h2>
         
-        <div className="mt-12 w-full overflow-hidden rounded-lg border border-grey-100 py-8">
+        <div className="mt-12 w-full overflow-auto rounded-lg border border-grey-100 py-8">
           <table className="w-full">
             <thead>
               <tr>

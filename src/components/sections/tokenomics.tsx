@@ -14,7 +14,7 @@ const tokenAllocation = [
 export function Tokenomics() {
   return (
     <section className="py-20">
-      <div className="container mx-auto w-5/6 md:w-4/5">
+      <div className="container mx-auto w-[95%] md:w-5/6 lg:w-4/5">
         {/* <p className="text-blue-500 uppercase text-center">CRNT TOKENOMICS</p> */}
         <h2 className="text-3xl font-bold text-center mb-12">
            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">CRNT Tokenomics</span>

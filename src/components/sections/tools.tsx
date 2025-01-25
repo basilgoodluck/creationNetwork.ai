@@ -22,7 +22,7 @@ export function Tools() {
         </div>
         <Image src="/assets/img/elipse3.png" alt="Tools" width={160} height={160} />
 
-        <div className="relative w-5/6 md:w-4/5 mx-auto aspect-[4/3] md:-mt-24">
+        <div className="relative w-[95%] md:w-5/6 lg:w-4/5 mx-auto aspect-[4/3] md:-mt-24">
           <Image 
             src="/assets/img/toolsImg.png" 
             alt="Tool 1" 
@@ -32,8 +32,8 @@ export function Tools() {
         </div>
       </div>
       <div className="container flex flex-col items-center gap-6">
-        <p className="text-blue-500 uppercase">Smart tech, real solutions</p>
-        <h2 className="text-3xl font-bold text-center">
+        <p className="text-blue-500 uppercase text-center text-sm md:text-lg">Smart tech, real solutions</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-center ">
         Solving Modern Challenges with <br />
           <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             AI & Blockchain
@@ -43,13 +43,12 @@ export function Tools() {
         AI and Blockchain redefine efficiency and trust. Unlock smarter, <br /> scalable solutions for your digital transformation.
         </p>
 
-        <div className="relative w-4/5 mx-auto aspect-[4/3] -mt-24">
+        <div className="relative w-[95%] md:w-5/6 lg:w-4/5 mx-auto aspect-[4/3] md:-mt-24">
           <Image 
             src="/assets/img/toolsImg2.png" 
             alt="Tool 1" 
             fill 
             className="object-contain" 
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </div>

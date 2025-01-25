@@ -29,7 +29,7 @@ export function MarketInsights() {
           opportunities in the evolving digital landscape.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 w-4/5 mx-auto mt-8">
+        <div className="flex flex-wrap justify-center gap-4 w-[95%] md:w-5/6 lg:w-4/5 mx-auto mt-8">
           {marketButtons.map((text) => (
             <Button
               key={text}
@@ -41,7 +41,7 @@ export function MarketInsights() {
           ))}
         </div>
 
-        <div className="w-4/5 mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="w-[95%] md:w-5/6 lg:w-4/5 mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Market Size over Time</h3>
             <p className="text-foreground/60">

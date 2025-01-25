@@ -4,7 +4,7 @@ import heroImage from "@/assets/img/heroImg.png"
 
 export function Hero() {
   return (
-    <section className="w-5/6 md:w-4/5 mx-auto py-4">
+    <section className="w-[95%] md:w-5/6 lg:w-4/5 mx-auto py-4">
       <div className="flex justify-center md:justify-between items-center gap-8 pt-24">
         <div>
           <h4 className="font-semibold text-lg md:text-xl text-center">Launch App</h4>

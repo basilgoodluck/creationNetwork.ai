@@ -47,11 +47,11 @@ export function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto w-4/5 py-20">
+      <div className="relative container mx-auto w-[95%] md:w-5/6 lg:w-4/5 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Logo and Description */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
+          <div className="space-y-6 text-center md:text-left">
+            <div className="flex items-center gap-3 justify-center md:justify-start">
               <Image
                 src="/assets/img/logo.png"
                 alt="CreationNetwork.ai"
@@ -67,7 +67,7 @@ export function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-sm font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
               {navigation.menu.map((item) => (
@@ -84,12 +84,12 @@ export function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-sm font-semibold text-white mb-6">Stay Updated</h3>
             <p className="text-sm text-gray-400 mb-4">
               Get the latest updates about Creation Network and exclusive offers.
             </p>
-            <div className="flex">
+            <div className="flex max-w-md mx-auto md:mx-0">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -99,7 +99,7 @@ export function Footer() {
                 <HiArrowRight className="w-5 h-5" />
               </button>
             </div>
-            <div className="flex gap-4 py-3">
+            <div className="flex gap-4 py-3 justify-center md:justify-start">
               {navigation.social.map((item) => {
                 const Icon = item.icon
                 return (
@@ -118,15 +118,14 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex justify-between items-center text-gray-400 py-4 text-sm">
-          <span>© Copyright 2024. Creation Network. All rights reserved.</span>
-          <div className="flex space-x-4">
-            <a href="/terms" className=" hover:underline px-2">Terms and Conditions</a>
-            <a href="/privacy" className=" hover:underline border-l border-purple-500 px-4">Privacy Policy</a>
-            <a href="/disclaimers" className=" hover:underline border-l border-purple-500 px-4">Disclaimers</a>
+        <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 py-4 text-sm gap-4 mt-8">
+          <span className="text-center md:text-left"> 2024. Creation Network. All rights reserved.</span>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 items-center">
+            <a href="/terms" className="hover:underline px-2">Terms and Conditions</a>
+            <a href="/privacy" className="hover:underline md:border-l border-purple-500 px-4">Privacy Policy</a>
+            <a href="/disclaimers" className="hover:underline md:border-l border-purple-500 px-4">Disclaimers</a>
           </div>
         </div>
-
       </div>
     </footer>
   )

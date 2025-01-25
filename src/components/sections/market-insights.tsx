@@ -15,7 +15,7 @@ const marketButtons = [
 export function MarketInsights() {
   return (
     <section className="py-20">
-      <div className="container flex flex-col items-center gap-6">
+      <div className="w-[95%] md:w-5/6 lg:w-4/5 mx-auto flex flex-col items-center gap-6">
         <p className="text-blue-500 uppercase">MARKET INSIGHTS</p>
         <h2 className="text-3xl font-bold text-center">
           Explore the{" "}

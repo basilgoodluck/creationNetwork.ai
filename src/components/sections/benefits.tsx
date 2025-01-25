@@ -42,7 +42,7 @@ const benefits = [
 export function Benefits() {
   return (
     <section className="py-20">
-      <div className="container flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 w-[95%] md:w-5/6 lg:w-4/5 mx-auto">
         <p className="text-blue-500 uppercase text-center text-sm md:text-lg">Customer Profiles</p>
         <h2 className="text-2xl md:text-3xl font-bold text-center">
         Who Benefits from <br />
@@ -52,9 +52,9 @@ export function Benefits() {
           Tailored solutions for different user segments, addressing specific needs and challenges in content creation and digital marketing.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-[95%] md:w-5/6 lg:w-4/5 mx-auto mt-8 relative">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 w-[95%] md:w-5/6 lg:w-4/5 mx-auto mt-8 relative">
           <BenefitCard {...benefits[0]} borderStyle="border-green-500" />
-          <div className="hidden md:block relative w-full h-full flex items-center justify-center">
+          <div className="hidden md:flex relative w-full h-full items-center justify-center">
             <Image 
               src="/assets/img/elipse4.png" 
               alt="elipse4" 
@@ -65,7 +65,7 @@ export function Benefits() {
           </div>
           <BenefitCard {...benefits[1]} borderStyle="border-red-500" />
           <BenefitCard {...benefits[2]} borderStyle="border-purple-500" />
-          <BenefitCard {...benefits[3]} borderStyle="border-blue-500" className="translate-y-12" />
+          <BenefitCard {...benefits[3]} borderStyle="border-blue-500" className="md:translate-y-12" />
           <BenefitCard {...benefits[4]} borderStyle="border-blue-100" />
         </div>
       </div>

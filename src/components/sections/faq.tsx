@@ -31,9 +31,9 @@ const faqs = [
 export function FAQ() {
   return (
     <section className="py-20">
-      <div className="container mx-auto w-[95%] md:w-5/6 lg:w-4/5">
+      <div className="w-[95%] md:w-5/6 lg:w-4/5 mx-auto">
         {/* <p className="text-blue-500 uppercase text-center">FAQ</p> */}
-        <h2 className="text-3xl font-semibold text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-12">
           <span className="bg-gradient-to-r from-[#3DD9C9] via-[#5B7FFF] to-[#7F5BFF] bg-clip-text text-transparent">
           Frequently Asked  Questions
           </span>

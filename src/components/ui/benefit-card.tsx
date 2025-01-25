@@ -11,7 +11,7 @@ interface BenefitCardProps {
 
 export function BenefitCard({ title, who, needs, solution, borderStyle, className }: BenefitCardProps) {
   return (
-    <div className={cn(`p-6 bg-[#131a2e] rounded-lg ${className}`)}>
+    <div className={cn(`w-full p-6 bg-[#131a2e] rounded-lg ${className}`)}>
       <div className="space-y-4">
         <div className={cn(`bg-gradient-to-b from-[#0f1128] to-[#2c2968] px-3 py-6 border-l- rounded-lg ${borderStyle} ` )}>
           <h3 className="text-xl font-semibold">{title}</h3>

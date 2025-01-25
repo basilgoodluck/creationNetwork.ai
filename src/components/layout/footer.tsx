@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaDiscord, FaTwitter, FaTelegram } from "react-icons/fa"
+import { FaTwitter, FaTelegram, FaFacebook } from "react-icons/fa"
 import { HiArrowRight } from "react-icons/hi"
 
 const navigation = {
@@ -18,7 +18,7 @@ const navigation = {
   ],
   social: [
     { name: "Twitter", href: "#", icon: FaTwitter },
-    { name: "Discord", href: "#", icon: FaDiscord },
+    { name: "Facebook", href: "#", icon: FaFacebook },
     { name: "Telegram", href: "#", icon: FaTelegram }
   ]
 }
@@ -47,8 +47,8 @@ export function Footer() {
       </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="relative container mx-auto w-4/5 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Logo and Description */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -64,21 +64,6 @@ export function Footer() {
             <p className="text-sm text-gray-400">
               Empowering content creators and digital marketers with AI-powered tools for seamless content creation, distribution, and monetization.
             </p>
-            <div className="flex gap-4">
-              {navigation.social.map((item) => {
-                const Icon = item.icon
-                return (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-400 hover:text-white transition-colors"
-                    aria-label={item.name}
-                  >
-                    <Icon className="w-5 h-5" />
-                  </Link>
-                )
-              })}
-            </div>
           </div>
 
           {/* Navigation */}
@@ -114,32 +99,34 @@ export function Footer() {
                 <HiArrowRight className="w-5 h-5" />
               </button>
             </div>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h3 className="text-sm font-semibold text-white mb-6">Legal</h3>
-            <ul className="space-y-3">
-              {navigation.legal.map((item) => (
-                <li key={item.name}>
+            <div className="flex gap-4 py-3">
+              {navigation.social.map((item) => {
+                const Icon = item.icon
+                return (
                   <Link
+                    key={item.name}
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors"
+                    aria-label={item.name}
                   >
-                    {item.name}
+                    <Icon className="w-5 h-5" />
                   </Link>
-                </li>
-              ))}
-            </ul>
+                )
+              })}
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-white/10">
-          <p className="text-center text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Creation Network. All rights reserved.
-          </p>
+        <div className="flex justify-between items-center text-gray-400 py-4 text-sm">
+          <span>© Copyright 2024. Creation Network. All rights reserved.</span>
+          <div className="flex space-x-4">
+            <a href="/terms" className=" hover:underline px-2">Terms and Conditions</a>
+            <a href="/privacy" className=" hover:underline border-l border-purple-500 px-4">Privacy Policy</a>
+            <a href="/disclaimers" className=" hover:underline border-l border-purple-500 px-4">Disclaimers</a>
+          </div>
         </div>
+
       </div>
     </footer>
   )

@@ -32,11 +32,10 @@ export function FAQ() {
   return (
     <section className="py-20">
       <div className="container mx-auto w-4/5">
-        <p className="text-blue-500 uppercase text-center">FAQ</p>
+        {/* <p className="text-blue-500 uppercase text-center">FAQ</p> */}
         <h2 className="text-3xl font-semibold text-center mb-12">
-          Frequently Asked <br />
           <span className="bg-gradient-to-r from-[#3DD9C9] via-[#5B7FFF] to-[#7F5BFF] bg-clip-text text-transparent">
-            Questions
+          Frequently Asked  Questions
           </span>
         </h2>
         <Accordion type="single" collapsible className="w-full space-y-3">

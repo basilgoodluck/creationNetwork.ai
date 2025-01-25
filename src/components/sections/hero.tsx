@@ -5,7 +5,17 @@ import heroImage from "@/assets/img/heroImg.png"
 export function Hero() {
   return (
     <section className="relative min-h-screen container px-4 w-4/5 mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pt-32 pb-20">
+      <div className="flex justify-between mx-auto gap-8 w-[fit-content] pt-28">
+        <div>
+          <h4 className="font-semibold text-xl">Launch App</h4>
+          <Image src="/assets/img/elipse1.png" alt="" width={100} height={100} />
+        </div>
+        <div>
+          <h4 className="font-semibold text-xl">ICO / Dapp</h4>
+          <Image src="/assets/img/elipse2.png" alt="" width={100} height={100} />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pt-6 pb-20">
         {/* Left content */}
         <div className="space-y-4">
           <p className="text-blue-500">Secure, smart, and transformative</p>

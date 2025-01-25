@@ -43,9 +43,10 @@ export function Benefits() {
   return (
     <section className="py-20">
       <div className="container flex flex-col items-center gap-6">
-        <p className="text-blue-500 uppercase text-center">BENEFITS</p>
+        <p className="text-blue-500 uppercase text-center">Customer Profiles</p>
         <h2 className="text-3xl font-bold text-center">
-          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">Target Users</span>{" "}& Solutions
+        Who Benefits from <br />
+          <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">CreationNetwork.ai?</span>
         </h2>
         <p className="text-foreground/60 text-center max-w-2xl">
           Tailored solutions for different user segments, addressing specific needs and challenges in content creation and digital marketing.

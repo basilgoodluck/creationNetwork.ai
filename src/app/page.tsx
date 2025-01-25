@@ -26,13 +26,13 @@ export default function Home() {
             <div id="home">
               <Hero />
             </div>
-            <div id="features">
+            <div id="solutions">
               <Features />
             </div>
-            <div id="solutions">
+            <div id="tools">
               <Tools />
             </div>
-            <div id="our-features">
+            <div id="features">
               <OurFeatures />
             </div>
             <div id="market-insights">

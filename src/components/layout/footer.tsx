@@ -29,7 +29,7 @@ export function Footer() {
       {/* Background Images */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/assets/img/bgFooter.png"
+          src="/assets/img/bgfooter.png"
           alt="Footer Background"
           fill
           className="object-cover"

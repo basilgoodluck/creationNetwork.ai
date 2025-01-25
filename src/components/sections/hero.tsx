@@ -4,21 +4,21 @@ import heroImage from "@/assets/img/heroImg.png"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen container px-4 w-4/5 mx-auto">
-      <div className="flex justify-between mx-auto gap-8 w-[fit-content] pt-28">
+    <section className="relative container px-4 w-5/6 md:w-4/5 mx-auto py-4">
+      <div className="flex justify-center md:justify-between items-center mx-auto gap-8 w-[fit-content] pt-24">
         <div>
-          <h4 className="font-semibold text-xl">Launch App</h4>
+          <h4 className="font-semibold text-lg md:text-xl text-center">Launch App</h4>
           <Image src="/assets/img/elipse1.png" alt="" width={100} height={100} />
         </div>
         <div>
-          <h4 className="font-semibold text-xl">ICO / Dapp</h4>
+          <h4 className="font-semibold text-lg md:text-xl text-center">ICO / Dapp</h4>
           <Image src="/assets/img/elipse2.png" alt="" width={100} height={100} />
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pt-6 pb-20">
+      <div className="flex flex-col justify-center md:flex-row md:justify-between items-center h-full pt-6 pb-20">
         {/* Left content */}
-        <div className="space-y-4">
-          <p className="text-blue-500">Secure, smart, and transformative</p>
+        <div className="space-y-4 text-center md:text-left">
+          <p className="text-blue-500 text-xs md:text-sm ">Secure, smart, and transformative</p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight ">
             Revolutionizing Digital <br />
             Transformation with{" "} <br />
@@ -26,10 +26,10 @@ export function Hero() {
               AI & Blockchain
             </span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-[600px]">
+          <p className="text-sm md:text-lg text-muted-foreground max-w-[600px]">
             Your all-in-one platform for content creation, e-commerce, and social media management.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-col md:flex-row ">
             <Button size="lg">Join the ICO</Button>
             <Button size="lg" variant="outline" className="border-none">Launch App</Button>
           </div>

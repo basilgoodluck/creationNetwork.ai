@@ -12,7 +12,7 @@ import { OurFeatures } from "@/components/sections/ourFeatures";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#01071d]">
+    <div className="min-h-screen bg-[#01071d] w-screen">
       <div className="relative">
         {/* Background image with gradient overlay */}
         <div className="absolute inset-0" style={{ height: '100vh' }}>
@@ -20,7 +20,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#01071d]/80 via-[#01071d]/50 to-[#01071d]" />
         </div>
         {/* Content */}
-        <div className="relative">
+        <div className="relative ">
           <Header />
           <main>
             <div id="home">

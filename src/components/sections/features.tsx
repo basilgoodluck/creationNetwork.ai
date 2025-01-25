@@ -27,11 +27,11 @@ export function Features() {
   return (
     <section className="py-20">
       <div className="container flex flex-col items-center gap-4 justify-center">
-        <p className="text-blue-500">Future-focused, user-driven</p>
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <p className="text-blue-500 text-xs md:text-sm">Future-focused, user-driven</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
           Why Choose <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-bold">CreationNetwork.ai?</span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-4/5 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-5/6 md:w-4/5 mx-auto">
           {features.map((feature) => (
             <Card key={feature.title}>
               <CardImage src={feature.image} alt={feature.title} width={80} />
